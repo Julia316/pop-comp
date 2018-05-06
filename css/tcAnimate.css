@@ -1,0 +1,140 @@
+.closeRotate:hover{
+	animation:circle 3s infinite;
+	-moz-animation:circle 3s infinite;
+	-webkit-animation:circle 3s infinite;
+	-o-animation:circle 3s infinite;
+}
+@keyframes circle{ 
+  0% {transform:rotate(0deg) scale(0.9,0.9);}
+  50% {transform:rotate(-180deg) scale(0.95,0.95);}
+  100% {transform:rotate(-360deg) scale(0.9,0.9);}
+}
+@-moz-keyframes  circle{ 
+  0% {transform:rotate(0deg) scale(0.9,0.9);}
+  50% {transform:rotate(-180deg) scale(0.95,0.95);}
+  100% {transform:rotate(-360deg) scale(0.9,0.9);}
+}
+@-webkit-keyframes  circle{ 
+  0% {-webkit-transform:rotate(0deg) scale(0.9,0.9);}
+  50% {-webkit-transform:rotate(-180deg) scale(0.95,0.95);}
+  100% {-webkit-transform:rotate(-360deg) scale(0.9,0.9);}
+}
+@-o-keyframes circle{ 
+  0% {transform:rotate(0deg) scale(0.9,0.9);}
+  50% {transform:rotate(-180deg) scale(0.95,0.95);}
+  100% {transform:rotate(-360deg) scale(0.9,0.9);}
+}
+.shaker{
+	animation:shake 0.75s 1s linear alternate;
+}
+@-webkit-keyframes shake{
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes shake{
+    0%{
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%, 20%{
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90%{
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80%{
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100%{
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}	
+
+.tcShowAnm{
+	animation:0.5s zoomIn ease-in forwards;
+	-webkit-animation:0.5s zoomIn ease-in forwards;
+	-moz-animation:0.5s zoomIn ease-in forwards;
+	-o-animation:0.5s zoomIn ease-in forwards;		
+}
+@keyframes zoomIn{
+	0%{transform:scale(0.01);opacity:0}
+	100%{transform:scale(1);opacity:1}
+}
+@-webkit-keyframes zoomIn{
+	0%{-webkit-transform:scale(0.01);opacity:0}
+	100%{-webkit-transform:scale(1);opacity:1}
+}
+@-moz-keyframes zoomIn{
+	0%{transform:scale(0.01);opacity:0}
+	100%{transform:scale(1);opacity:1}
+}
+@-o-keyframes zoomIn{
+	0%{transform:scale(0.01);opacity:0}
+	100%{transform:scale(1);opacity:1}
+}
+.tcHideAnm{
+	animation:0.5s zoomOut ease-in forwards;
+	-webkit-animation:0.5s zoomOut ease-in forwards;
+	-moz-animation:0.5s zoomOut ease-in forwards;
+	-o-animation:0.5s zoomOut ease-in forwards;		
+}
+@keyframes zoomOut{
+	0%{transform:scale(1)}
+	100%{transform:scale(0)}
+}
+@-webkit-keyframes zoomOut{
+	0%{-webkit-transform:scale(1)}
+	100%{-webkit-transform:scale(0)}
+}
+@-moz-keyframes zoomOut{
+	0%{transform:scale(1)}
+	100%{transform:scale(0)}
+}
+@-o-keyframes zoomOut{
+	0%{transform:scale(1)}
+	100%{transform:scale(0)}
+}
+.markHideAnm{
+	animation:0.5s markZoomOut ease-in forwards;
+	-webkit-animation:0.5s markZoomOut ease-in forwards;
+	-moz-animation:0.5s markZoomOut ease-in forwards;
+	-o-animation:0.5s markZoomOut ease-in forwards;		
+}
+@keyframes markZoomOut{
+	0%{opacity:0.5}
+	100%{opacity:0}
+}
+@-webkit-keyframes markZoomOut{
+	0%{opacity:0.5}
+	100%{opacity:0}
+}
+@-moz-keyframes markZoomOut{
+	0%{opacity:0.5}
+	100%{opacity:0}
+}
+@-o-keyframes markZoomOut{
+	0%{opacity:0.5}
+	100%{opacity:0}
+}
